@@ -1,0 +1,23 @@
+/*.body{
+    background-color: blue;
+}*/
+.inner{
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: darkslategray;
+}
+
+.outer{
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; /*размеры строк*/
+    grid-template-columns: 3fr 3fr 3fr 1.3fr;/*размер колонок*/
+
+    grid-template-areas: /*указание номеров ячек*/
+    "i1 i2 i3 i3"
+    "i1 i4 i5 i6"
+    "i7 i8 i5 i9"
+    "i10 i8 i11 i11"
+    ;
+
+}
